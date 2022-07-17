@@ -282,6 +282,14 @@ h1 {
     height: 40px;
 }
 
+.blob-spacer-top {
+    height: 140px;
+}
+
+h2 {
+    text-align: center;
+}
+
 /*button code do not touch*/
 
 .resume-button-holder {
