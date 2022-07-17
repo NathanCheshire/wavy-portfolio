@@ -293,8 +293,8 @@ h2 {
 .bloby {
    align-items: center;
    margin: auto;
-   width: 900px;
-   height: 600px;
+   display: flex;
+   flex-direction: column;
 }
 
 /*button code do not touch*/
