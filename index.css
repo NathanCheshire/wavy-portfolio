@@ -14,7 +14,7 @@ section {
     padding: 25px 15vw;
 }
 
-p {
+p, li {
     font-size: 22px;
 }
 
@@ -101,12 +101,12 @@ h1 {
 
 .discord-parent {
     width: 50%;
-    float: left;
+    float: right;
 }
 
 .gmail-parent {
     width: 50%;
-    float: right;
+    float: left;
 }
 
 .discord {
@@ -200,6 +200,40 @@ h1 {
 
 .resume-section {
     height: 200px;
+}
+
+.cyder-link {
+    font-weight: bold;
+    color: #95baff;
+}
+
+.cyder-link:hover {
+    color:#f0f0f0;
+    cursor: pointer;
+}
+
+.awards-wave-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.awards-wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 231px;
+}
+
+.awards-wave-bottom .shape-fill {
+    fill: #588DF0;
+}
+
+.degree-spacer {
+    height: 80px;
 }
 
 /*button code do not touch*/
