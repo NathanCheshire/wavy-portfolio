@@ -164,7 +164,7 @@ h1 {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 229px;
+  height: 230px;
 }
 
 .contact-cards-wave .shape-fill {
@@ -234,7 +234,7 @@ h1 {
 }
 
 .degree-spacer {
-  height: 40px;
+  height: 0px;
 }
 
 .degree-image {
@@ -288,6 +288,13 @@ h1 {
 
 h2 {
     text-align: center;
+}
+
+.bloby {
+   align-items: center;
+   margin: auto;
+   width: 900px;
+   height: 600px;
 }
 
 /*button code do not touch*/
