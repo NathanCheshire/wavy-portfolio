@@ -33,6 +33,7 @@
             Alright well since you insist, here's a direct link to my resume as well as a printable list of my skills.
             These documents serve basically the same information as this website, in a more compact way.
         </p>
+        <div class="blue-spacer"></div>
         <div class="resume-button-holder">
             <a
                 onclick="window.open('https://drive.google.com/file/d/1-CYzPVwpUNVF9RBPiJrIEL6qMLwAO0xp/view?usp=sharing')">
@@ -152,8 +153,6 @@
             A pathfinding project bundled with the familiar game of Pac-man
         </div>
     </section>
-    <div class="blob-spacer-top"></div>
-    <h2>Woah! You've been scrolling for a while. Have a break and check out this cool blob I made</h2>
     <div class="bloby">
         <div>
             <svg id="blob" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
@@ -177,6 +176,7 @@
         <img src="images/diploma.jpg" alt="Software Engineering Degree" class="degree-image" , width=calc(1.37549019608
             *600), height=600>
         <div class="contact-cards-spacer"></div>
+        <div class="post-degree-spacer"></div>
         <div class="contact-cards-wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -187,17 +187,13 @@
         </div>
     </section>
     <div class="contact-cards">
-        <div class="gmail-parent">
-            <div class="gmail">
-                <img src="svgs/gmail.svg" width=120, height=120 class="gmail-logo">
-                <div class="gmail-name">Nate@NathanCheshire.com</div>
-            </div>
+        <div class="gmail">
+            <img src="svgs/gmail.svg" width=120, height=120 class="gmail-logo">
+            <div class="gmail-name">Nate@NathanCheshire.com</div>
         </div>
-        <div class="discord-parent">
-            <div class="discord">
-                <img src="svgs/discord.svg" width=250, height=250 class="discord-logo">
-                <div class="discord-name">Natche#8845</div>
-            </div>
+        <div class="discord">
+            <img src="svgs/discord.svg" width=250, height=250 class="discord-logo">
+            <div class="discord-name">Natche#8845</div>
         </div>
     </div>
     <div class="footer">
@@ -216,7 +212,7 @@
         '#blob1',
         { path: '#blob1' },
         { path: '#blob2' },
-        { repeat: 1000, duration: 2000, yoyo: true }
+        { repeat: 100000, duration: 2000, yoyo: true }
     )
 
     tween.start()

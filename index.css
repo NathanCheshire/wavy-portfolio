@@ -33,10 +33,15 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 50px 50px;
+  text-align: center;
 }
 
 .blue {
   background: #588df0;
+}
+
+.blue-spacer {
+    height: 50px;
 }
 
 .footer {
@@ -94,20 +99,10 @@ h1 {
 .contact-cards {
   padding: 5vh 0vw;
   width: 100%;
-  height: 250px;
+  height: 450px;
   flex-direction: row;
   align-items: center;
   background-color: #588df0;
-}
-
-.discord-parent {
-  width: 50%;
-  float: right;
-}
-
-.gmail-parent {
-  width: 50%;
-  float: left;
 }
 
 .discord {
@@ -123,6 +118,8 @@ h1 {
   font-size: 34px;
   font-family: "Anton";
   border-radius: 25px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .gmail {
@@ -138,6 +135,7 @@ h1 {
   font-size: 34px;
   font-family: "Anton";
   border-radius: 25px;
+  margin-bottom: 50px;
 }
 
 .discord-name,
@@ -282,10 +280,6 @@ h1 {
     height: 40px;
 }
 
-.blob-spacer-top {
-    height: 140px;
-}
-
 h2 {
     text-align: center;
 }
@@ -295,6 +289,10 @@ h2 {
    margin: auto;
    display: flex;
    flex-direction: column;
+}
+
+.post-degree-spacer {
+    height: 60px;
 }
 
 /*button code do not touch*/
