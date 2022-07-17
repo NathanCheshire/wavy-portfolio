@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Prompt&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <style>
     body {
@@ -71,6 +72,17 @@
         line-height: 0;
     }
 
+    .wave svg {
+        position: relative;
+        display: block;
+        width: calc(134% + 1.3px);
+        height: 203px;
+    }
+
+    .wave .shape-fill {
+        fill: #202731;
+    }
+
     .footer-left {
         display: flex;
         flex-direction: row;
@@ -93,6 +105,29 @@
         padding: 0.5vw 1vh;
         text-align: center;
         float: right;
+    }
+
+    .discord {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 200px;
+        background-color: #588df0;
+        text-align: center;
+        line-height: 200px;
+        margin: auto;
+        align-items: center;
+        font-size: 40px;
+        font-family: 'Bebas Neue';
+        border-radius: 25px;
+    }
+
+    .discord-name {
+        transform: translate(0px, -25px);
+    }
+
+    .discord-logo {
+        transform: translate(0px, 25px);
     }
 </style>
 
@@ -145,22 +180,22 @@
             voluptate ab totam fugiat sint nihil?
         </p>
     </section>
+    <section>
+        <div class="discord">
+            <img src="svgs/discord.svg" width=250, height=250 class="discord-logo">
+            <div class="discord-name">Natche#8845</div>
+        </div>
+    </section>
     <div class="footer">
         <p class="footer-left">
             Nate@NathanCheshire.com
         </p>
         <p class="footer-center">
         </p>
-        <img src="github.svg" width=130, height=130 class="footer-right", onclick="window.open('https://github.com/nathancheshire')">
+        <img src="svgs/github.svg" width=130, height=130 class="footer-right" ,
+            onclick="window.open('https://github.com/nathancheshire')">
     </div>
     </section>
 </body>
-
-<script type="text/javascript">
-    var toolbar = document.getElementsByClassName("footer-right");
-    toolbar.onclick = function (e) {
-        alert("Hello");
-    };
-</script>
 
 </html>
