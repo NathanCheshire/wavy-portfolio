@@ -107,27 +107,88 @@
         float: right;
     }
 
+    .contact-cards {
+        padding: 5vh 0vw;
+        width: 100%;
+        height: 250px;
+        flex-direction: row;
+        align-items: center;
+        background-color: #588df0;
+    }
+
+    .discord-parent {
+        width: 50%;
+        float: left;
+    }
+
+    .gmail-parent {
+        width: 50%;
+        float: right;
+    }
+
     .discord {
         display: flex;
         flex-direction: column;
         width: 320px;
         height: 200px;
-        background-color: #588df0;
+        background-color: #202731;
         text-align: center;
         line-height: 200px;
         margin: auto;
         align-items: center;
-        font-size: 40px;
-        font-family: 'Bebas Neue';
+        font-size: 34px;
+        font-family: 'Anton';
         border-radius: 25px;
     }
 
-    .discord-name {
+    .gmail {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 200px;
+        background-color: #202731;
+        text-align: center;
+        line-height: 200px;
+        margin: auto;
+        align-items: center;
+        font-size: 34px;
+        font-family: 'Anton';
+        border-radius: 25px;
+    }
+
+    .discord-name,
+    .gmail-name {
         transform: translate(0px, -25px);
     }
 
-    .discord-logo {
+    .discord-logo,
+    .gmail-logo {
         transform: translate(0px, 25px);
+    }
+
+    .contact-cards-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .contact-cards-wave svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 229px;
+    }
+
+    .contact-cards-wave .shape-fill {
+        fill: #588DF0;
+    }
+
+    .spacer {
+        padding-top: 200px;
     }
 </style>
 
@@ -173,19 +234,37 @@
         </p>
     </section>
     <section>
-        <h1>Nathan</h1>
+        <h1>Nathans</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nesciunt reprehenderit cupiditate
             distinctio, numquam perspiciatis praesentium ipsum expedita dolores libero facilis aperiam facere laborum
             voluptate ab totam fugiat sint nihil?
         </p>
-    </section>
-    <section>
-        <div class="discord">
-            <img src="svgs/discord.svg" width=250, height=250 class="discord-logo">
-            <div class="discord-name">Natche#8845</div>
+        <div class="spacer">
+            <div class="contact-cards-wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
         </div>
     </section>
+    <div class="contact-cards">
+        <div class="discord-parent">
+            <div class="discord">
+                <img src="svgs/discord.svg" width=250, height=250 class="discord-logo">
+                <div class="discord-name">Natche#8845</div>
+            </div>
+        </div>
+        <div class="gmail-parent">
+            <div class="gmail">
+                <img src="svgs/gmail.svg" width=120, height=120 class="gmail-logo">
+                <div class="gmail-name">Nate@nathancheshire.com</div>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <p class="footer-left">
             Nate@NathanCheshire.com
