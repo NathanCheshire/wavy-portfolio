@@ -13,184 +13,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Prompt', sans-serif;
-        color: white;
-        background: #202731;
-    }
-
-    section {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 300px;
-        padding: 25px 15vw;
-    }
-
-    p {
-        font-size: 22px;
-    }
-
-    .intro {
-        font-size: 22px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 10vw;
-        font: 'Prompt'
-    }
-
-    h1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 50px
-    }
-
-    .blue {
-        background: #588df0;
-    }
-
-    .footer {
-        height: 150px;
-        width: 100%;
-        background-color: #090b0e;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .wave {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-
-    .wave svg {
-        position: relative;
-        display: block;
-        width: calc(134% + 1.3px);
-        height: 203px;
-    }
-
-    .wave .shape-fill {
-        fill: #202731;
-    }
-
-    .footer-left {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 20px 20px;
-        font-family: "Anton";
-        font-size: 32px;
-        width: 33%;
-        text-align: left;
-        display: inline-block;
-    }
-
-    .footer-center {
-        width: 33%;
-        text-align: center;
-        display: inline-block;
-    }
-
-    .footer-right {
-        padding: 0.5vw 1vh;
-        text-align: center;
-        float: right;
-    }
-
-    .contact-cards {
-        padding: 5vh 0vw;
-        width: 100%;
-        height: 250px;
-        flex-direction: row;
-        align-items: center;
-        background-color: #588df0;
-    }
-
-    .discord-parent {
-        width: 50%;
-        float: left;
-    }
-
-    .gmail-parent {
-        width: 50%;
-        float: right;
-    }
-
-    .discord {
-        display: flex;
-        flex-direction: column;
-        width: 320px;
-        height: 200px;
-        background-color: #202731;
-        text-align: center;
-        line-height: 200px;
-        margin: auto;
-        align-items: center;
-        font-size: 34px;
-        font-family: 'Anton';
-        border-radius: 25px;
-    }
-
-    .gmail {
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-        height: 200px;
-        background-color: #202731;
-        text-align: center;
-        line-height: 200px;
-        margin: auto;
-        align-items: center;
-        font-size: 34px;
-        font-family: 'Anton';
-        border-radius: 25px;
-    }
-
-    .discord-name,
-    .gmail-name {
-        transform: translate(0px, -25px);
-    }
-
-    .discord-logo,
-    .gmail-logo {
-        transform: translate(0px, 25px);
-    }
-
-    .contact-cards-wave {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-
-    .contact-cards-wave svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 229px;
-    }
-
-    .contact-cards-wave .shape-fill {
-        fill: #588DF0;
-    }
-
-    .spacer {
-        padding-top: 200px;
-    }
-</style>
+    <link rel="stylesheet" type="text/css" href="index.css" </head>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
 <body>
     <h1>
@@ -202,12 +26,41 @@
         passionate about operating systems, web development, and effective API design.
     </div>
     <section class="blue">
-        <h1>Nathan</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nesciunt reprehenderit cupiditate
-            distinctio, numquam perspiciatis praesentium ipsum expedita dolores libero facilis aperiam facere laborum
-            voluptate ab totam fugiat sint nihil?
+        <h1>Cut to the chase</h1>
+        <p class="resume-section">
+            Alright well since you insist, here's a direct link to my resume as well as a printable list of my skills.
+            These documents serve basically the same information as this website, in a more compact way.
         </p>
+        <div class="resume-button-holder">
+            <a onclick="window.open('https://drive.google.com/file/d/1-CYzPVwpUNVF9RBPiJrIEL6qMLwAO0xp/view?usp=sharing')">
+                <svg class="icon-arrow before">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+                <span class="label">Resume</span>
+                <svg class="icon-arrow after">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="skills-button-holder">
+            <a onclick="window.open('https://docs.google.com/document/d/1-E8aFeZdFNGffAxQVX5Gl3RB-jK3uElJFAR4xdPxZ9o/edit?usp=sharing')">
+                <svg class="icon-arrow before">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+                <span class="label">Skills</span>
+                <svg class="icon-arrow after">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+        </div>
+        <svg style="display: none;">
+            <defs>
+                <symbol id="arrow" viewBox="0 0 35 15">
+                    <title>Arrow</title>
+                    <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z " />
+                </symbol>
+            </defs>
+        </svg>
         <div class="wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -217,7 +70,16 @@
             </svg>
         </div>
     </section>
-    <section class="">
+    <section>
+        <div class="wave-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="bottom-wave-spacer"></div>
         <h1>Nathan</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nesciunt reprehenderit cupiditate
@@ -240,7 +102,7 @@
             distinctio, numquam perspiciatis praesentium ipsum expedita dolores libero facilis aperiam facere laborum
             voluptate ab totam fugiat sint nihil?
         </p>
-        <div class="spacer">
+        <div class="contact-cards-spacer">
             <div class="contact-cards-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
