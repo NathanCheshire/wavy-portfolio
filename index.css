@@ -1,321 +1,368 @@
 body {
-    margin: 0;
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    background: #202731;
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+  color: white;
+  background: #202731;
 }
 
 section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 300px;
-    padding: 25px 15vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  padding: 25px 15vw;
 }
 
-p, li {
-    font-size: 22px;
+p,
+li {
+  font-size: 22px;
 }
 
 .intro {
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 10vw;
-    font: 'Prompt'
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10vw;
+  font: "Prompt";
 }
 
 h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 50px
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
 }
 
 .blue {
-    background: #588df0;
+  background: #588df0;
 }
 
 .footer {
-    height: 150px;
-    width: 100%;
-    background-color: #090b0e;
-    flex-direction: row;
-    align-items: center;
+  height: 150px;
+  width: 100%;
+  background-color: #090b0e;
+  flex-direction: row;
+  align-items: center;
 }
 
 .wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .wave svg {
-    position: relative;
-    display: block;
-    width: calc(134% + 1.3px);
-    height: 203px;
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 203px;
 }
 
 .wave .shape-fill {
-    fill: #202731;
+  fill: #202731;
 }
 
 .footer-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px 20px;
-    font-family: "Anton";
-    font-size: 32px;
-    width: 33%;
-    text-align: left;
-    display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 20px;
+  font-family: "Anton";
+  font-size: 32px;
+  width: 33%;
+  text-align: left;
+  display: inline-block;
 }
 
 .footer-center {
-    width: 33%;
-    text-align: center;
-    display: inline-block;
+  width: 33%;
+  text-align: center;
+  display: inline-block;
 }
 
 .footer-right {
-    padding: 0.5vw 1vh;
-    text-align: center;
-    float: right;
+  padding: 0.5vw 1vh;
+  text-align: center;
+  float: right;
 }
 
 .contact-cards {
-    padding: 5vh 0vw;
-    width: 100%;
-    height: 250px;
-    flex-direction: row;
-    align-items: center;
-    background-color: #588df0;
+  padding: 5vh 0vw;
+  width: 100%;
+  height: 250px;
+  flex-direction: row;
+  align-items: center;
+  background-color: #588df0;
 }
 
 .discord-parent {
-    width: 50%;
-    float: right;
+  width: 50%;
+  float: right;
 }
 
 .gmail-parent {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }
 
 .discord {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    height: 200px;
-    background-color: #202731;
-    text-align: center;
-    line-height: 200px;
-    margin: auto;
-    align-items: center;
-    font-size: 34px;
-    font-family: 'Anton';
-    border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 200px;
+  background-color: #202731;
+  text-align: center;
+  line-height: 200px;
+  margin: auto;
+  align-items: center;
+  font-size: 34px;
+  font-family: "Anton";
+  border-radius: 25px;
 }
 
 .gmail {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 200px;
-    background-color: #202731;
-    text-align: center;
-    line-height: 200px;
-    margin: auto;
-    align-items: center;
-    font-size: 34px;
-    font-family: 'Anton';
-    border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  background-color: #202731;
+  text-align: center;
+  line-height: 200px;
+  margin: auto;
+  align-items: center;
+  font-size: 34px;
+  font-family: "Anton";
+  border-radius: 25px;
 }
 
 .discord-name,
 .gmail-name {
-    transform: translate(0px, -25px);
+  transform: translate(0px, -25px);
 }
 
 .discord-logo,
 .gmail-logo {
-    transform: translate(0px, 25px);
+  transform: translate(0px, 25px);
 }
 
 .contact-cards-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .contact-cards-wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 229px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 229px;
 }
 
 .contact-cards-wave .shape-fill {
-    fill: #588DF0;
+  fill: #588df0;
 }
 
 .contact-cards-spacer {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
 .wave-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .wave-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 124px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 124px;
 }
 
 .wave-bottom .shape-fill {
-    fill: #588DF0;
+  fill: #588df0;
 }
 
 .bottom-wave-spacer {
-    height: 60px;
+  height: 60px;
 }
 
 .resume-section {
-    height: 200px;
+  height: 200px;
 }
 
 .cyder-link {
-    font-weight: bold;
-    color: #95baff;
+  font-weight: bold;
+  color: #95baff;
 }
 
 .cyder-link:hover {
-    color:#f0f0f0;
-    cursor: pointer;
+  color: #f0f0f0;
+  cursor: pointer;
 }
 
 .awards-wave-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .awards-wave-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(134% + 1.3px);
-    height: 231px;
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 231px;
 }
 
 .awards-wave-bottom .shape-fill {
-    fill: #588DF0;
+  fill: #588df0;
 }
 
 .degree-spacer {
-    height: 80px;
+  height: 40px;
+}
+
+.degree-image {
+  border-radius: 20px;
+}
+
+.github-projects-spacer {
+  height: 100px;
+}
+
+.github-card {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 250px;
+  background-color: #1d1d1d;
+  margin: auto;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 25px;
+  font-size: 22px;
+  font-family: "prompt";
+  text-align: center;
+  justify-content: center;
+}
+
+.github-card:hover {
+  transform: scale(1.1);
+}
+
+.github-card-title {
+  font-size: 34px;
+  font-family: "Anton";
+}
+
+.github-card-content {
+  line-height: 250px;
+}
+
+.github-card-inner-spacer {
+    height: 40px;
+}
+
+.github-projects-card-spacer {
+    height: 40px;
 }
 
 /*button code do not touch*/
 
 .resume-button-holder {
-    transform: translate(0px, -100px);
+  transform: translate(0px, -100px);
 }
 
 .skills-button-holder {
-    transform: translate(0px, -40px);
+  transform: translate(0px, -40px);
 }
 
 a {
-    border: 5px solid #101010;
-    border-radius: 15px;
-    color: #101010;
-    font-family: "Fjalla One";
-    display: inline-block;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 24px;
-    margin: auto;
-    padding: 12px 32px 12px 82px;
-    position: relative;
-    text-decoration: none;
+  border: 5px solid #101010;
+  border-radius: 15px;
+  color: #101010;
+  font-family: "Fjalla One";
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: auto;
+  padding: 12px 32px 12px 82px;
+  position: relative;
+  text-decoration: none;
 }
 
 a .label,
 a .icon-arrow {
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    perspective: 1000;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  perspective: 1000;
 }
 
 a .label {
-    display: inline-block;
-    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 a .icon-arrow {
-    fill: #101010;
-    height: 15px;
-    top: 17px;
-    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1), opacity .4s cubic-bezier(0.86, 0, 0.07, 1);
-    width: 35px;
+  fill: #101010;
+  height: 15px;
+  top: 17px;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1),
+    opacity 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  width: 35px;
 }
 
 a .icon-arrow.before {
-    left: 32px;
-    margin-right: 15px;
-    position: absolute;
-    transform-origin: left center;
+  left: 32px;
+  margin-right: 15px;
+  position: absolute;
+  transform-origin: left center;
 }
 
 a .icon-arrow.after {
-    margin-left: 15px;
-    opacity: 0;
-    position: absolute;
-    right: 32px;
-    transform: translateX(75%) scaleX(0.1);
-    transform-origin: right center;
+  margin-left: 15px;
+  opacity: 0;
+  position: absolute;
+  right: 32px;
+  transform: translateX(75%) scaleX(0.1);
+  transform-origin: right center;
 }
 
 a:hover .label {
-    transform: translateX(-52px);
+  transform: translateX(-52px);
 }
 
 a:hover .icon-arrow.before {
-    opacity: 0;
-    transform: translateX(-75%) scaleX(0.1);
+  opacity: 0;
+  transform: translateX(-75%) scaleX(0.1);
 }
 
 a:hover .icon-arrow.after {
-    opacity: 1;
-    transform: translateX(0) scaleX(1);
+  opacity: 1;
+  transform: translateX(0) scaleX(1);
 }
 
 a:active {
-    border-color: #f0f0f0;
-    color: #f0f0f0;
+  border-color: #f0f0f0;
+  color: #f0f0f0;
 }
 
 a:active .icon-arrow {
-    fill: #f0f0f0;
+  fill: #f0f0f0;
 }
