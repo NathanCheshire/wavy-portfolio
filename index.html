@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nate Cheshire</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Prompt&family=Roboto:wght@700&display=swap"
@@ -23,9 +22,7 @@
         "Hello There" - Obi-Wan Kenobi
     </h1>
     <div class="intro">
-        While I am not (disappointingly) Obi-Wan Kenobi, I'd wager I know a great deal more about software engineering,
-        mathematics, and STEM related subjects than him. I'm Nathan Cheshire, a software engineer
-        passionate about operating systems, web development, and effective API design.
+        <span id="greeter" , class="intro"></span>
     </div>
     <section class="blue">
         <h1>Cut to the chase</h1>
@@ -216,6 +213,23 @@
     )
 
     tween.start()
+</script>
+<script>
+    let hour = new Date().getHours();
+    let text;
+
+    if (hour >= 18) {
+        text = "Good evening.";
+    } else if (hour >= 12) {
+        text = "Good afternoon.";
+    } else {
+        text = "Good morning.";
+    }
+
+    document.getElementById("greeter").innerHTML = text + " While I am not (disappointingly) Obi-Wan Kenobi, "
+        + "I'd wager I know a great deal more about software engineering, mathematics, and STEM related subjects "
+        + "than him. I'm Nathan Cheshire, a software engineer passionate about operating systems, web development, "
+        + "and effective API design.";
 </script>
 
 </html>

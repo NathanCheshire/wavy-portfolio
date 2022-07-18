@@ -22,10 +22,9 @@ li {
 .intro {
   font-size: 22px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 30px 10vw;
   font: "Prompt";
+  text-align: center;
 }
 
 h1 {
